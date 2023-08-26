@@ -26,16 +26,16 @@ const WHY_CHOOSE_US_DATA = [
 
 export default function Why2ChooseUs() {
   return (
-    <div className="flex justify-center p-20">
+    <div className="flex justify-center p-10 px-5 sm:p-20">
       <div className="w-full max-w-tv">
         <h4 className="text-center font-semibold uppercase leading-loose text-section-head">
           Why to choose us?
         </h4>
-        <h3 className="text-center text-3xl font-medium leading-loose text-primary-text">
+        <h3 className="text-center text-2xl md:text-3xl font-medium leading-loose text-primary-text">
           Training Features
         </h3>
 
-        <div className="mt-8 flex gap-8 w-full">
+        <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
           {WHY_CHOOSE_US_DATA.map(({ id, title, desc, icon }) => (
             <div key={id} 
                 className='

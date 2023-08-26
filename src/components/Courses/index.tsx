@@ -26,15 +26,15 @@ const COURSES_DATA = [
 
 export default function Courses() {
   return (
-    <div className="flex justify-center bg-[#F6F8FC] p-20">
+    <div className="flex justify-center bg-[#F6F8FC] p-10 sm:p-20">
       <div className="flex w-full max-w-tv flex-col justify-center">
         <h4 className="text-center font-semibold uppercase leading-loose text-section-head">
           Courses
         </h4>
-        <h3 className="text-center text-3xl font-medium leading-loose text-primary-text">
+        <h3 className="text-center text-2xl md:text-3xl font-medium leading-loose text-primary-text">
           Popular Courses
         </h3>
-        <div className="mt-8 mb-12 flex gap-8">
+        <div className="mt-8 mb-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {COURSES_DATA.map(({ id, title, icon }) => (
             <div
               key={id}

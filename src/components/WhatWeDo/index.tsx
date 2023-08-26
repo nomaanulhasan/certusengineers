@@ -21,20 +21,20 @@ const WHAT_WE_DO_DATA = [
 
 export default function WhatWeDo() {
   return (
-    <div className="flex justify-center bg-[#F6F8FC] p-20">
+    <div className="flex justify-center bg-[#F6F8FC] py-10 px-5 sm:p-20">
       <div className="w-full max-w-tv">
         <h4 className="text-center font-semibold uppercase leading-loose text-section-head">
           What We Do
         </h4>
-        <h3 className="text-center text-3xl font-medium leading-loose text-primary-text">
+        <h3 className="text-center text-[1.35rem] sm:text-2xl md:text-3xl font-medium leading-loose text-primary-text">
           Training | Services | Consulting
         </h3>
-        <div className="mt-8 flex gap-8">
+        <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {WHAT_WE_DO_DATA.map(({ id, title, desc, icon }) => (
             <div
               key={id}
               className="
-                flex flex-1 gap-8 rounded-md border p-6 duration-300 hover:bg-white hover:shadow-lg cursor-default
+                flex flex-col items-center md:items-start text-center md:text-left gap-4 md:flex-row md:gap-8 rounded-md border p-6 duration-300 hover:bg-white hover:shadow-lg cursor-default
               "
             >
               <i className={`${icon} text-7xl text-main-orange`} />
