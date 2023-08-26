@@ -34,7 +34,7 @@ export default function WhatWeDo() {
             <div
               key={id}
               className="
-                flex cursor-default flex-col items-center gap-4 rounded-md border p-6 text-center duration-300 hover:bg-white hover:shadow-lg md:flex-row md:items-start md:gap-8 md:text-left
+                flex cursor-default flex-col items-center gap-4 rounded-md border-[2px] p-6 text-center duration-300 hover:bg-white hover:shadow-lg md:flex-row md:items-start md:gap-8 md:text-left
               "
             >
               <i className={`${icon} text-main-orange text-7xl`} />
