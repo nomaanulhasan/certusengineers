@@ -1,13 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navigations from "./Navigations";
 import { NAV_MENU } from "@/lib";
 import Link from "next/link";
 
 export default function MobileNavigations() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isClosed, setIsClosed] = useState(true);
   const toggleMenu = () => setIsOpen((state) => !state);
+  useEffect(() => {
+  if (isOpen) {
+    setIsClosed(false)
+    return
+  }
+  
+  const timer = setTimeout(() => {
+    setIsClosed(true)
+  },300)
+
+  return () => clearTimeout(timer)
+  },[isOpen]);
+  
   return (
     <div className="relative overflow-hidden">
       <button
@@ -33,7 +47,7 @@ export default function MobileNavigations() {
 
       <nav
         className={`
-          fixed left-0 top-[116px] flex w-[calc(100vw-6px)] flex-col items-center justify-center
+          ${isClosed ? 'absolute' : 'fixed'} left-0 top-[116px] flex w-[calc(100vw-6px)] flex-col items-center justify-center
           gap-2 bg-main-blue/80 px-6 py-4 backdrop-blur-sm transition duration-300 ${
             isOpen ? "translate-x-0" : "translate-x-[101vw]"
           }
