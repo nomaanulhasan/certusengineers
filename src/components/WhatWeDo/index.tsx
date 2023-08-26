@@ -21,25 +21,27 @@ const WHAT_WE_DO_DATA = [
 
 export default function WhatWeDo() {
   return (
-    <div className="flex justify-center bg-[#F6F8FC] py-10 px-5 sm:p-20">
-      <div className="w-full max-w-tv">
-        <h4 className="text-center font-semibold uppercase leading-loose text-section-head">
+    <div className="flex justify-center bg-[#F6F8FC] px-5 py-10 sm:p-20">
+      <div className="max-w-tv w-full">
+        <h4 className="text-section-head text-center font-semibold uppercase leading-loose">
           What We Do
         </h4>
-        <h3 className="text-center text-[1.35rem] sm:text-2xl md:text-3xl font-medium leading-loose text-primary-text">
+        <h3 className="text-primary-text text-center text-[1.35rem] font-medium leading-loose sm:text-2xl md:text-3xl">
           Training | Services | Consulting
         </h3>
-        <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {WHAT_WE_DO_DATA.map(({ id, title, desc, icon }) => (
             <div
               key={id}
               className="
-                flex flex-col items-center md:items-start text-center md:text-left gap-4 md:flex-row md:gap-8 rounded-md border p-6 duration-300 hover:bg-white hover:shadow-lg cursor-default
+                flex cursor-default flex-col items-center gap-4 rounded-md border p-6 text-center duration-300 hover:bg-white hover:shadow-lg md:flex-row md:items-start md:gap-8 md:text-left
               "
             >
-              <i className={`${icon} text-7xl text-main-orange`} />
+              <i className={`${icon} text-main-orange text-7xl`} />
               <div className="flex flex-col gap-2">
-                <h5 className="font-medium text-primary-text">{title}</h5>
+                <h5 className="text-primary-text text-lg font-medium">
+                  {title}
+                </h5>
                 <p className="text-secondary-text">{desc}</p>
               </div>
             </div>
