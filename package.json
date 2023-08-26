@@ -17,6 +17,7 @@
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
+    "clsx": "^2.0.0",
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.19",
     "gsap": "^3.12.2",
@@ -26,9 +27,12 @@
     "react-dom": "18.2.0",
     "swiper": "^10.2.0",
     "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "typescript": "5.2.2",
+    "use-click-outside": "^2.0.0"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.197",
+    "lodash": "^4.17.21",
     "prettier": "^3.0.2",
     "prettier-plugin-tailwindcss": "^0.5.3"
   }
