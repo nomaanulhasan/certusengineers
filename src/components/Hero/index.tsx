@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <div className="relative w-screen after:absolute after:inset-0 after:z-10 after:bg-[#104cba3d]">
-      <div className="relative h-[80vh] w-full">
+      <div className="relative h-screen max-h-[680px] w-full">
         <Image
           src="/images/it-services.webp"
           className="object-cover"
@@ -13,7 +13,7 @@ export default function Hero() {
         />
       </div>
       <div className="absolute inset-0 z-20 flex items-center justify-center text-white">
-        <div className="flex max-w-tv flex-col items-center gap-8 text-center">
+        <div className="max-w-tv flex flex-col items-center gap-8 text-center">
           <h2 className="text-sm font-medium uppercase duration-300 md:text-xl">
             Certus Engineers Pvt. Ltd.
           </h2>
@@ -24,7 +24,7 @@ export default function Hero() {
           </h1>
           <Link
             href="/contact-us"
-            className="w-auto rounded-md bg-main-blue px-8 py-4 font-semibold duration-300 md:px-12"
+            className="bg-main-blue w-auto rounded-md px-8 py-4 font-semibold duration-300 md:px-12"
           >
             Let&apos;s Start
           </Link>
