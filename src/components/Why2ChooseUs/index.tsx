@@ -2,6 +2,9 @@
 
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 
 const WHY_CHOOSE_US_DATA = [
   {
@@ -22,6 +25,24 @@ const WHY_CHOOSE_US_DATA = [
     desc: "We server 100% job oriented courses with end to end placement assistance",
     icon: "/images/businessman.png",
   },
+  {
+    id: 4,
+    title: "In-house company",
+    desc: "Students will get direct benefits of ongoing projects",
+    icon: "/images/enterprise.png",
+  },
+  {
+    id: 5,
+    title: "Interview Preparation",
+    desc: "We will help you to practice your interview technique.",
+    icon: "/images/interview.png",
+  },
+  {
+    id: 6,
+    title: "100% Job Assistance",
+    desc: "We server 100% job oriented courses with end to end placement assistance",
+    icon: "/images/businessman.png",
+  },
 ];
 
 export default function Why2ChooseUs() {
@@ -35,31 +56,63 @@ export default function Why2ChooseUs() {
           Training Features
         </h3>
 
-        <div className="mt-12 grid w-full gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          autoplay={{
+            delay: 1500,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+          loop
+          pagination={{ clickable: true }}
+          slidesPerView={1}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 25,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+          className="ceSwiper mt-12 !pb-20"
+        >
           {WHY_CHOOSE_US_DATA.map(({ id, title, desc, icon }) => (
-            <div
+            <SwiperSlide
               key={id}
-              className="
-                  group flex flex-1 cursor-default flex-col items-center justify-center gap-6 rounded-md border
-                  bg-[#F1F1F2FC] p-6 duration-300 hover:bg-white hover:shadow-lg
-                "
+              className="h-full rounded-md border bg-[#F1F1F2FC]"
             >
               <div
                 className="
-                    relative flex h-[100px] w-[100px] items-center justify-center rounded-full bg-white duration-300 group-hover:bg-[#F1F1F2FC]
-                  "
+                  group flex flex-1 cursor-default flex-col items-center justify-center
+                  gap-6 p-6 duration-300 hover:bg-white hover:shadow-lg
+                "
               >
-                <Image src={icon} alt={title} width={70} height={70} />
+                <div
+                  className="
+                    relative flex h-[100px] w-[100px] items-center justify-center
+                    rounded-full bg-white duration-300 group-hover:bg-[#F1F1F2FC]
+                  "
+                >
+                  <Image src={icon} alt={title} width={70} height={70} />
+                </div>
+                <div className="flex flex-col gap-2 text-center">
+                  <h5 className="text-lg font-medium text-card-head">
+                    {title}
+                  </h5>
+                  <p className="text-secondary-text duration-300 group-hover:text-main-orange">
+                    {desc}
+                  </p>
+                </div>
               </div>
-              <div className="flex flex-col gap-2 text-center">
-                <h5 className="text-lg font-medium text-card-head">{title}</h5>
-                <p className="text-secondary-text duration-300 group-hover:text-main-orange">
-                  {desc}
-                </p>
-              </div>
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </div>
   );
