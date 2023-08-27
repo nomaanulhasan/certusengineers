@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${rubik.className} scroll-smooth`}>
+      <body className={`${rubik.className} overflow-x-hidden scroll-smooth`}>
         <Header />
         {children}
         <Footer />
