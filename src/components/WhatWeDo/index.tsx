@@ -22,14 +22,15 @@ const WHAT_WE_DO_DATA = [
 export default function WhatWeDo() {
   return (
     <div className="flex justify-center bg-[#F6F8FC] px-5 py-10 sm:p-20">
-      <div className="max-w-tv w-full">
-        <h4 className="text-section-head text-center font-semibold uppercase leading-loose">
+      <div className="w-full max-w-tv">
+        <h4 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
           What We Do
         </h4>
-        <h3 className="text-primary-text text-center text-[1.35rem] font-medium leading-loose sm:text-2xl md:text-3xl">
+        <h3 className="text-center text-[1.35rem] font-medium leading-loose text-primary-text sm:text-2xl md:text-3xl">
           Training | Services | Consulting
         </h3>
-        <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+        <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {WHAT_WE_DO_DATA.map(({ id, title, desc, icon }) => (
             <div
               key={id}
@@ -37,9 +38,9 @@ export default function WhatWeDo() {
                 flex cursor-default flex-col items-center gap-4 rounded-md border-[2px] p-6 text-center duration-300 hover:bg-white hover:shadow-lg md:flex-row md:items-start md:gap-8 md:text-left
               "
             >
-              <i className={`${icon} text-main-orange text-7xl`} />
+              <i className={`${icon} text-7xl text-main-orange`} />
               <div className="flex flex-col gap-2">
-                <h5 className="text-primary-text text-lg font-medium">
+                <h5 className="text-lg font-medium text-primary-text">
                   {title}
                 </h5>
                 <p className="text-secondary-text">{desc}</p>

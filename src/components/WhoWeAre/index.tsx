@@ -25,15 +25,16 @@ const WHO_WE_ARE_DATA = [
 export default function WhoWeAre() {
   return (
     <div className="flex justify-center bg-[url('/images/who-we-are-bg.jpg')] bg-no-repeat px-5 py-10 sm:p-20">
-      <div className="max-w-tv flex w-full flex-col gap-8">
+      <div className="flex w-full max-w-tv flex-col gap-8">
         <div>
-          <h4 className="text-section-head text-center font-semibold uppercase leading-loose">
+          <h4 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
             Who We Are
           </h4>
-          <h3 className="text-primary-text text-center text-xl font-medium leading-loose sm:text-2xl md:text-3xl">
+          <h3 className="text-center text-xl font-medium leading-loose text-primary-text sm:text-2xl md:text-3xl">
             We deal with the aspects of professional IT Services
           </h3>
-          <div className="mt-8 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+          <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {WHO_WE_ARE_DATA.map(({ id, title, desc, icon }) => (
               <div
                 key={id}
@@ -44,7 +45,7 @@ export default function WhoWeAre() {
               >
                 <Image src={icon} alt={title} width={150} height={150} />
                 <div className="flex flex-col gap-2 text-center">
-                  <h5 className="text-primary-text text-lg font-medium">
+                  <h5 className="text-lg font-medium text-primary-text">
                     {title}
                   </h5>
                   <p className="text-secondary-text">{desc}</p>
@@ -55,7 +56,7 @@ export default function WhoWeAre() {
         </div>
         <Link
           href="/services"
-          className="bg-main-blue hover:bg-main-orange m-auto rounded-md px-8 py-4 font-semibold text-white duration-300"
+          className="m-auto rounded-md bg-main-blue px-8 py-4 font-semibold text-white duration-300 hover:bg-main-orange"
         >
           View All Services
         </Link>

@@ -13,7 +13,7 @@ export default function Hero() {
         />
       </div>
       <div className="absolute inset-0 z-20 flex items-center justify-center text-white">
-        <div className="max-w-tv flex flex-col items-center gap-8 text-center">
+        <div className="flex max-w-tv flex-col items-center gap-8 text-center">
           <h2 className="text-sm font-medium uppercase duration-300 md:text-xl">
             Certus Engineers Pvt. Ltd.
           </h2>
@@ -24,7 +24,7 @@ export default function Hero() {
           </h1>
           <Link
             href="/contact-us"
-            className="bg-main-blue w-auto rounded-md px-8 py-4 font-semibold duration-300 md:px-12"
+            className="w-auto rounded-md bg-main-blue px-8 py-4 font-semibold duration-300 hover:bg-main-orange md:px-12"
           >
             Let&apos;s Start
           </Link>

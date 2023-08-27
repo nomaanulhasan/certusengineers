@@ -27,15 +27,15 @@ const WHY_CHOOSE_US_DATA = [
 export default function Why2ChooseUs() {
   return (
     <div className="flex justify-center p-10 px-5 sm:p-20">
-      <div className="max-w-tv w-full">
-        <h4 className="text-section-head text-center font-semibold uppercase leading-loose">
+      <div className="w-full max-w-tv">
+        <h4 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
           Why to choose us?
         </h4>
-        <h3 className="text-primary-text text-center text-2xl font-medium leading-loose md:text-3xl">
+        <h3 className="text-center text-2xl font-medium leading-loose text-primary-text md:text-3xl">
           Training Features
         </h3>
 
-        <div className="mt-8 grid w-full gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid w-full gap-8 md:grid-cols-2 lg:grid-cols-3">
           {WHY_CHOOSE_US_DATA.map(({ id, title, desc, icon }) => (
             <div
               key={id}
@@ -52,8 +52,8 @@ export default function Why2ChooseUs() {
                 <Image src={icon} alt={title} width={70} height={70} />
               </div>
               <div className="flex flex-col gap-2 text-center">
-                <h5 className="text-card-head text-lg font-medium">{title}</h5>
-                <p className="text-secondary-text group-hover:text-main-orange duration-300">
+                <h5 className="text-lg font-medium text-card-head">{title}</h5>
+                <p className="text-secondary-text duration-300 group-hover:text-main-orange">
                   {desc}
                 </p>
               </div>

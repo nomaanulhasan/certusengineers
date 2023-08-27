@@ -10,7 +10,7 @@ const JOB_UPDATES_POSTS = [
     desc: "Audit /AccountAssistant Eligibility Criteria Having Commerce Background Computer knowledge Experience Preferred…",
     post_pic: "/images/tesimg.jpg",
     publish_date: "Aug 27, 2023",
-    post_type: "Jobs",
+    post_category: "Jobs",
     author: {
       name: "Certus Engineers",
       profile_url: "/author",
@@ -23,7 +23,7 @@ const JOB_UPDATES_POSTS = [
     desc: "Eligiblity MSC COMPUTER/GEOLOGYDIPLOMA/B.E. IN CIVIL ENGG /CIVIL CONTACT : Mrs. ANKITA…",
     post_pic: "/images/Draftsman-Job-Description.jpeg",
     publish_date: "Aug 26, 2023",
-    post_type: "Jobs",
+    post_category: "Jobs",
     author: {
       name: "Certus Engineers",
       profile_url: "/author",
@@ -36,7 +36,7 @@ const JOB_UPDATES_POSTS = [
     desc: "Require Candidatefor full Time BackOffice Workhaving goodcommand inEnglish n alsoComputerKnowledge Contact…",
     post_pic: "/images/customer-service-call-center.jpg",
     publish_date: "Aug 25, 2023",
-    post_type: "Jobs",
+    post_category: "Jobs",
     author: {
       name: "Certus Engineers",
       profile_url: "/author",
@@ -48,15 +48,15 @@ const JOB_UPDATES_POSTS = [
 export default function JobUpdates() {
   return (
     <div className="flex justify-center p-10 px-5 sm:p-20">
-      <div className="max-w-tv w-full">
-        <h4 className="text-section-head text-center font-semibold uppercase leading-loose">
+      <div className="w-full max-w-tv">
+        <h4 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
           Recent Articles
         </h4>
-        <h3 className="text-primary-text text-center text-2xl font-medium leading-loose md:text-3xl">
+        <h3 className="text-center text-2xl font-medium leading-loose text-primary-text md:text-3xl">
           Job Updates
         </h3>
 
-        <div className="mt-8 grid w-full gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid w-full gap-8 md:grid-cols-2 lg:grid-cols-3">
           {JOB_UPDATES_POSTS.map(
             ({
               id,
@@ -64,12 +64,12 @@ export default function JobUpdates() {
               title,
               desc,
               publish_date,
-              post_type,
+              post_category,
               author: { name, profile_url, profile_pic },
             }) => (
               <div
                 key={id}
-                className="shadow-job-card overflow-hidden rounded-md"
+                className="flex flex-col justify-between overflow-hidden rounded-md shadow-job-card"
               >
                 <div className="relative flex h-60 items-center justify-center overflow-hidden">
                   <Image
@@ -80,53 +80,57 @@ export default function JobUpdates() {
                     className="h-full w-full object-cover"
                   />
                 </div>
-                <div>
-                  <div className="flex flex-1 flex-col gap-4 p-6">
-                    <div className="text-secondary-text flex gap-4 text-sm">
-                      <div className="flex items-center justify-center gap-2">
-                        <FontAwesomeIcon
-                          icon={faCalendarDays}
-                          className="text-section-head text-base"
-                        />
-                        {publish_date}
-                      </div>
-                      <div className="flex items-center justify-center gap-2">
-                        <FontAwesomeIcon
-                          icon={faTag}
-                          className="text-section-head text-base"
-                        />
-                        {post_type}
-                      </div>
-                    </div>
-                    <div className="flex flex-col gap-4">
-                      <Link
-                        href={`/post/${id}`}
-                        className="text-main-orange hover:text-main-blue text-xl font-semibold"
-                      >
-                        {title}
-                      </Link>
-                      <div className="text-secondary-text text-lg leading-relaxed">
-                        {desc}
-                      </div>
+                <div className="flex flex-1 flex-col gap-4 p-6">
+                  <div className="flex gap-8 text-sm text-secondary-text">
+                    <Link
+                      href={`/post/${id}`}
+                      className="flex gap-2 hover:text-section-head"
+                    >
+                      <FontAwesomeIcon
+                        icon={faCalendarDays}
+                        className="text-base text-section-head"
+                      />
+                      {publish_date}
+                    </Link>
+                    <Link
+                      href="/categories/jobs"
+                      className="flex gap-2 hover:text-section-head"
+                    >
+                      <FontAwesomeIcon
+                        icon={faTag}
+                        className="text-base text-section-head"
+                      />
+                      {post_category}
+                    </Link>
+                  </div>
+                  <div className="flex flex-col gap-4">
+                    <Link
+                      href={`/post/${id}`}
+                      className="text-xl font-semibold text-main-orange hover:text-main-blue"
+                    >
+                      {title}
+                    </Link>
+                    <div className="text-lg leading-relaxed text-secondary-text">
+                      {desc}
                     </div>
                   </div>
-                  <div className="flex items-center gap-4 border-t border-[#e3e3e3] p-6 text-sm font-medium">
-                    <Image
-                      src={profile_pic}
-                      className="rounded-full"
-                      alt={name}
-                      width={35}
-                      height={35}
-                    />
-                    <div>
-                      By{" "}
-                      <Link
-                        href={profile_url}
-                        className="text-main-orange hover:text-main-blue"
-                      >
-                        {name}
-                      </Link>
-                    </div>
+                </div>
+                <div className="flex items-center gap-4 border-t border-[#e3e3e3] px-6 py-4 text-sm font-medium">
+                  <Image
+                    src={profile_pic}
+                    className="rounded-full"
+                    alt={name}
+                    width={35}
+                    height={35}
+                  />
+                  <div>
+                    By{" "}
+                    <Link
+                      href={profile_url}
+                      className="text-main-orange hover:text-main-blue"
+                    >
+                      {name}
+                    </Link>
                   </div>
                 </div>
               </div>
