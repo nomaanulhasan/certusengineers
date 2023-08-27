@@ -84,7 +84,7 @@ export default function JobUpdates() {
                   <div className="flex gap-8 text-sm text-secondary-text">
                     <Link
                       href={`/post/${id}`}
-                      className="flex gap-2 hover:text-section-head"
+                      className="flex gap-2 duration-300 hover:text-section-head"
                     >
                       <FontAwesomeIcon
                         icon={faCalendarDays}
@@ -94,7 +94,7 @@ export default function JobUpdates() {
                     </Link>
                     <Link
                       href="/categories/jobs"
-                      className="flex gap-2 hover:text-section-head"
+                      className="flex gap-2 duration-300 hover:text-section-head"
                     >
                       <FontAwesomeIcon
                         icon={faTag}
@@ -106,7 +106,7 @@ export default function JobUpdates() {
                   <div className="flex flex-col gap-4">
                     <Link
                       href={`/post/${id}`}
-                      className="text-xl font-semibold text-main-orange hover:text-main-blue"
+                      className="text-xl font-semibold text-main-orange duration-300 hover:text-main-blue"
                     >
                       {title}
                     </Link>
@@ -127,7 +127,7 @@ export default function JobUpdates() {
                     By{" "}
                     <Link
                       href={profile_url}
-                      className="text-main-orange hover:text-main-blue"
+                      className="text-main-orange duration-300 hover:text-main-blue"
                     >
                       {name}
                     </Link>
