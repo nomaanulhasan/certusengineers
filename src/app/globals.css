@@ -52,11 +52,11 @@
 
 .ceSwiper .swiper-pagination-bullet {
   border: 4px solid #022950;
-  background: #0093d8;
+  background: #ff6d00;
   height: 18px;
   width: 18px;
 }
 
 .ceSwiper .swiper-pagination-bullet-active {
-  border-color: #ff6d00;
+  border-color: #0093d8;
 }
