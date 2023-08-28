@@ -49,12 +49,12 @@ export default function Why2ChooseUs() {
   return (
     <div className="flex justify-center p-10 px-5 sm:p-20">
       <div className="w-full max-w-tv">
-        <h4 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
+        <h3 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
           Why to choose us?
-        </h4>
-        <h3 className="text-center text-2xl font-medium leading-loose text-primary-text md:text-3xl">
-          Training Features
         </h3>
+        <h4 className="text-center text-2xl font-medium leading-loose text-primary-text md:text-3xl">
+          Training Features
+        </h4>
 
         <Swiper
           modules={[Autoplay, Pagination]}

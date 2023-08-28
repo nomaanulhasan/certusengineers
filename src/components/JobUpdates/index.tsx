@@ -49,12 +49,12 @@ export default function JobUpdates() {
   return (
     <div className="flex justify-center p-10 px-5 sm:p-20">
       <div className="w-full max-w-tv">
-        <h4 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
+        <h3 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
           Recent Articles
-        </h4>
-        <h3 className="text-center text-2xl font-medium leading-loose text-primary-text md:text-3xl">
-          Job Updates
         </h3>
+        <h4 className="text-center text-2xl font-medium leading-loose text-primary-text md:text-3xl">
+          Job Updates
+        </h4>
 
         <div className="mt-12 grid w-full gap-8 md:grid-cols-2 lg:grid-cols-3">
           {JOB_UPDATES_POSTS.map(
