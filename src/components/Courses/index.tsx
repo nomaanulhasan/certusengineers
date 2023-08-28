@@ -48,9 +48,9 @@ export default function Courses() {
                 width={150}
                 height={150}
               />
-              <h5 className="whitespace-nowrap text-lg font-medium text-primary-text">
+              <h3 className="whitespace-nowrap text-lg font-medium text-primary-text">
                 {title}
-              </h5>
+              </h3>
             </div>
           ))}
         </div>

@@ -45,9 +45,9 @@ export default function WhoWeAre() {
               >
                 <Image src={icon} alt={title} width={150} height={150} />
                 <div className="flex flex-col gap-2 text-center">
-                  <h5 className="text-lg font-medium text-primary-text">
+                  <h3 className="text-lg font-medium text-primary-text">
                     {title}
-                  </h5>
+                  </h3>
                   <p className="text-secondary-text">{desc}</p>
                 </div>
               </div>

@@ -102,9 +102,9 @@ export default function Why2ChooseUs() {
                   <Image src={icon} alt={title} width={70} height={70} />
                 </div>
                 <div className="flex flex-col gap-2 text-center">
-                  <h5 className="text-lg font-medium text-card-head">
+                  <h3 className="text-lg font-medium text-card-head">
                     {title}
-                  </h5>
+                  </h3>
                   <p className="text-secondary-text duration-300 group-hover:text-main-orange">
                     {desc}
                   </p>

@@ -40,9 +40,9 @@ export default function WhatWeDo() {
             >
               <i className={`${icon} text-7xl text-main-orange`} />
               <div className="flex flex-col gap-2">
-                <h5 className="text-lg font-medium text-primary-text">
+                <h3 className="text-lg font-medium text-primary-text">
                   {title}
-                </h5>
+                </h3>
                 <p className="text-secondary-text">{desc}</p>
               </div>
             </div>
