@@ -85,12 +85,12 @@ export default function Why2ChooseUs() {
           {WHY_CHOOSE_US_DATA.map(({ id, title, desc, icon }) => (
             <SwiperSlide
               key={id}
-              className="h-full rounded-md border bg-[#F1F1F2FC]"
+              className="rounded-md border bg-[#F1F1F2FC] hover:bg-white hover:shadow-lg"
             >
               <div
                 className="
                   group flex flex-1 cursor-default flex-col items-center justify-center
-                  gap-6 p-6 duration-300 hover:bg-white hover:shadow-lg
+                  gap-6 p-6 duration-300
                 "
               >
                 <div
