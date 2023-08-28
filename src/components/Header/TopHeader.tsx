@@ -16,13 +16,13 @@ export default function TopHeader() {
     <div className="relative z-10 flex justify-center bg-top-strip text-primary-text">
       <div className="flex h-top-strip w-full max-w-tv items-center justify-between px-6 leading-7 transition">
         <div className="flex gap-2 text-center transition sm:gap-8">
-          <div className="hidden sm:flex">
+          <div className="hidden sm:flex sm:gap-1">
             Call Us:{" "}
             <Link id="header-call" href="tel:8007409709">
-              8007409709
+              80074 09709
             </Link>
           </div>
-          <div className="hidden sm:flex">
+          <div className="hidden sm:flex sm:gap-1">
             Email us:{" "}
             <Link id="header-email" href="mailto:certusengineers@gmail.com">
               certusengineers@gmail.com
@@ -52,6 +52,7 @@ export default function TopHeader() {
           <div className="flex items-center gap-2">
             <a
               id="header-facebook"
+              aria-label="Facebook Profile"
               rel="nofollow, noindex, noreferrer"
               target="_blank"
               href="https://facebook.com"
@@ -61,6 +62,7 @@ export default function TopHeader() {
             </a>
             <a
               id="header-instagram"
+              aria-label="Instagram Profile"
               rel="nofollow, noindex, noreferrer"
               target="_blank"
               href="https://instagram.com"
@@ -70,6 +72,7 @@ export default function TopHeader() {
             </a>
             <a
               id="header-youtube"
+              aria-label="Youtube Profile"
               rel="nofollow, noindex, noreferrer"
               target="_blank"
               href="https://youtube.com"

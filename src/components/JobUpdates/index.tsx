@@ -84,6 +84,7 @@ export default function JobUpdates() {
                   <div className="flex gap-8 text-sm text-secondary-text">
                     <Link
                       id={`link-to-post-publish-date-${id}`}
+                      aria-label="Link to published date"
                       href={`/post/${id}`}
                       className="flex gap-2 duration-300 hover:text-section-head"
                     >
@@ -95,6 +96,7 @@ export default function JobUpdates() {
                     </Link>
                     <Link
                       id={`link-to-category-jobs-${id}`}
+                      aria-label="Link to category"
                       href="/categories/jobs"
                       className="flex gap-2 duration-300 hover:text-section-head"
                     >
@@ -108,6 +110,7 @@ export default function JobUpdates() {
                   <div className="flex flex-col gap-4">
                     <Link
                       id={`link-to-post-title-${id}`}
+                      aria-label="Link to post"
                       href={`/post/${id}`}
                       className="text-xl font-semibold text-main-orange duration-300 hover:text-main-blue"
                     >
@@ -130,6 +133,7 @@ export default function JobUpdates() {
                     By{" "}
                     <Link
                       id={`link-to-profile-${id}`}
+                      aria-label="Link to profile"
                       href={profile_url}
                       className="text-main-orange duration-300 hover:text-main-blue"
                     >

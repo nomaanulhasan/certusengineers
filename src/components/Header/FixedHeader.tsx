@@ -7,7 +7,12 @@ export default function FixedHeader() {
   return (
     <header className="sticky top-0 z-50 flex w-full justify-center bg-white shadow-md transition-all duration-300">
       <div className="flex min-h-[64px] w-full max-w-tv items-center justify-between py-2 pl-4 pr-6">
-        <Link id="header-logo" href="/" title="Certus Engineers">
+        <Link
+          id="header-logo"
+          aria-label="Header logo"
+          href="/"
+          title="Certus Engineers"
+        >
           <Image
             className="w-60 md:w-64 lg:w-72"
             alt="Certus Engineers Logo"

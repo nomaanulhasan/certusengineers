@@ -26,6 +26,7 @@ export default function Footer() {
           >
             <Link
               id="footer-call-icon"
+              aria-label="Footer call icon"
               href="tel:8007409709"
               className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-main-orange"
             >
@@ -35,6 +36,7 @@ export default function Footer() {
               <small className="text-base">Call us</small>
               <Link
                 id="footer-call"
+                aria-label="Footer call"
                 className="text-lg duration-300 hover:text-main-orange"
                 href="tel:8007409709"
               >
@@ -53,6 +55,7 @@ export default function Footer() {
           >
             <Link
               id="footer-email-icon"
+              aria-label="Footer email icon"
               href="mailto:certusengineers@gmail.com"
               className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-main-orange"
             >
@@ -62,6 +65,7 @@ export default function Footer() {
               <small className="text-base">Write to us</small>
               <Link
                 id="footer-email"
+                aria-label="Footer email"
                 className="text-lg duration-300 hover:text-main-orange"
                 href="mailto:certusengineers@gmail.com"
               >
@@ -103,6 +107,7 @@ export default function Footer() {
             <a
               id="footer-facebook"
               rel="nofollow, noindex, noreferrer"
+              aria-label="Link to facebook profile"
               target="_blank"
               href="https://facebook.com"
               className="h-6 w-6 duration-300 hover:text-main-blue"
@@ -112,6 +117,7 @@ export default function Footer() {
             <a
               id="footer-twitter"
               rel="nofollow, noindex, noreferrer"
+              aria-label="Link to twitter profile"
               target="_blank"
               href="https://twitter.com"
               className="h-6 w-6 duration-300 hover:text-main-blue"
@@ -121,6 +127,7 @@ export default function Footer() {
             <a
               id="footer-instagram"
               rel="nofollow, noindex, noreferrer"
+              aria-label="Link to instagram profile"
               target="_blank"
               href="https://instagram.com"
               className="h-6 w-6 duration-300 hover:text-main-blue"
@@ -130,6 +137,7 @@ export default function Footer() {
             <a
               id="footer-pinterest"
               rel="nofollow, noindex, noreferrer"
+              aria-label="Link to pinterest profile"
               target="_blank"
               href="https://pinterest.com"
               className="h-6 w-6 duration-300 hover:text-main-blue"
