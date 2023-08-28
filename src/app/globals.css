@@ -39,22 +39,24 @@
   border-radius: var(--scrollbar-size);
 }
 
-/* .ceSwiper .swiper-wrapper,
 .ceSwiper .swiper-slide {
-  height: 100% !important;
-} */
+  height: auto;
+}
+
 .ceSwiper .swiper-pagination {
   justify-content: center;
   align-items: stretch;
   display: flex;
   gap: 1rem;
 }
+
 .ceSwiper .swiper-pagination-bullet {
   border: 4px solid #022950;
   background: #0093d8;
   height: 18px;
   width: 18px;
 }
+
 .ceSwiper .swiper-pagination-bullet-active {
   border-color: #ff6d00;
 }
