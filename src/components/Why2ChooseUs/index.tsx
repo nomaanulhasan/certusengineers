@@ -83,15 +83,11 @@ export default function Why2ChooseUs() {
           className="ceSwiper mt-12 !pb-20"
         >
           {WHY_CHOOSE_US_DATA.map(({ id, title, desc, icon }) => (
-            <SwiperSlide
-              key={id}
-              className="
-                rounded-md border bg-[#F1F1F2FC] duration-300 hover:bg-white  hover:shadow-lg
-              "
-            >
+            <SwiperSlide key={id}>
               <div
                 className="
-                  group flex flex-1 cursor-default flex-col items-center justify-center gap-6 p-6
+                  group flex h-full flex-1 cursor-default flex-col items-center justify-center gap-6
+                  rounded-md border bg-[#F1F1F2FC] p-6 duration-500 hover:bg-white hover:shadow-lg
                 "
               >
                 <div
