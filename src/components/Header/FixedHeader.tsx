@@ -49,8 +49,8 @@ export default function FixedHeader() {
             id="mobile-nav-contact"
             href="/contact-us"
             className="
-              hidden whitespace-nowrap rounded-md bg-main-orange px-4 py-4 font-semibold
-              text-white transition hover:bg-nav-hover min-[420px]:block xl:px-6
+              hidden whitespace-nowrap rounded-md bg-main-orange px-4 py-3 font-semibold
+              text-white transition hover:bg-nav-hover min-[420px]:block
             "
           >
             Contact Us
