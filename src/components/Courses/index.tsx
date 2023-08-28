@@ -55,6 +55,7 @@ export default function Courses() {
           ))}
         </div>
         <Link
+          id="view-all-courses"
           href="/courses"
           className="m-auto rounded-md bg-main-blue px-8 py-4 font-semibold text-white duration-300 hover:bg-main-orange"
         >

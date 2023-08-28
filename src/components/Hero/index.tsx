@@ -23,6 +23,7 @@ export default function Hero() {
             Services &amp; Consultation.
           </h1>
           <Link
+            id="hero-cta"
             href="/contact-us"
             className="w-auto rounded-md bg-main-blue px-8 py-4 font-semibold duration-300 hover:bg-main-orange md:px-12"
           >

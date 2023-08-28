@@ -25,6 +25,7 @@ export default function Footer() {
             "
           >
             <Link
+              id="footer-call-icon"
               href="tel:8007409709"
               className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-main-orange"
             >
@@ -33,6 +34,7 @@ export default function Footer() {
             <div className="flex flex-col gap-1">
               <small className="text-base">Call us</small>
               <Link
+                id="footer-call"
                 className="text-lg duration-300 hover:text-main-orange"
                 href="tel:8007409709"
               >
@@ -50,6 +52,7 @@ export default function Footer() {
             "
           >
             <Link
+              id="footer-email-icon"
               href="mailto:certusengineers@gmail.com"
               className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-main-orange"
             >
@@ -58,6 +61,7 @@ export default function Footer() {
             <div className="flex flex-col gap-1">
               <small className="text-base">Write to us</small>
               <Link
+                id="footer-email"
                 className="text-lg duration-300 hover:text-main-orange"
                 href="mailto:certusengineers@gmail.com"
               >
@@ -97,6 +101,8 @@ export default function Footer() {
         <div className="flex w-full max-w-tv flex-col items-center justify-between gap-2 px-6 sm:flex-row">
           <div className="flex gap-2 text-center">
             <a
+              id="footer-facebook"
+              rel="nofollow, noindex, noreferrer"
               target="_blank"
               href="https://facebook.com"
               className="h-6 w-6 duration-300 hover:text-main-blue"
@@ -104,13 +110,17 @@ export default function Footer() {
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
             <a
+              id="footer-twitter"
+              rel="nofollow, noindex, noreferrer"
               target="_blank"
-              href="https://twiiter.com"
+              href="https://twitter.com"
               className="h-6 w-6 duration-300 hover:text-main-blue"
             >
               <FontAwesomeIcon icon={faTwitter} />
             </a>
             <a
+              id="footer-instagram"
+              rel="nofollow, noindex, noreferrer"
               target="_blank"
               href="https://instagram.com"
               className="h-6 w-6 duration-300 hover:text-main-blue"
@@ -118,6 +128,8 @@ export default function Footer() {
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
+              id="footer-pinterest"
+              rel="nofollow, noindex, noreferrer"
               target="_blank"
               href="https://pinterest.com"
               className="h-6 w-6 duration-300 hover:text-main-blue"

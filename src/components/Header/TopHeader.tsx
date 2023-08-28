@@ -17,21 +17,26 @@ export default function TopHeader() {
       <div className="flex h-top-strip w-full max-w-tv items-center justify-between px-6 leading-7 transition">
         <div className="flex gap-2 text-center transition sm:gap-8">
           <div className="hidden sm:flex">
-            Call Us: <Link href="tel:8007409709">8007409709</Link>
+            Call Us:{" "}
+            <Link id="header-call" href="tel:8007409709">
+              8007409709
+            </Link>
           </div>
           <div className="hidden sm:flex">
             Email us:{" "}
-            <Link href="mailto:certusengineers@gmail.com">
+            <Link id="header-email" href="mailto:certusengineers@gmail.com">
               certusengineers@gmail.com
             </Link>
           </div>
           <Link
+            id="header-call-icon"
             href="tel:8007409709"
             className="h-6 w-6 text-main-orange transition hover:text-nav-hover sm:hidden"
           >
             <FontAwesomeIcon icon={faPhone} />
           </Link>
           <Link
+            id="header-email-icon"
             href="mailto:certusengineers@gmail.com"
             className="h-6 w-6 text-main-orange transition hover:text-nav-hover sm:hidden"
           >
@@ -46,6 +51,8 @@ export default function TopHeader() {
           </div>
           <div className="flex items-center gap-2">
             <a
+              id="header-facebook"
+              rel="nofollow, noindex, noreferrer"
               target="_blank"
               href="https://facebook.com"
               className="h-6 w-6 text-main-orange transition hover:text-nav-hover"
@@ -53,6 +60,8 @@ export default function TopHeader() {
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
             <a
+              id="header-instagram"
+              rel="nofollow, noindex, noreferrer"
               target="_blank"
               href="https://instagram.com"
               className="h-6 w-6 text-main-orange transition hover:text-nav-hover"
@@ -60,6 +69,8 @@ export default function TopHeader() {
               <FontAwesomeIcon icon={faInstagram} />
             </a>
             <a
+              id="header-youtube"
+              rel="nofollow, noindex, noreferrer"
               target="_blank"
               href="https://youtube.com"
               className="h-6 w-6 text-main-orange transition hover:text-nav-hover"

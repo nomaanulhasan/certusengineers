@@ -47,14 +47,14 @@ export default function MobileNavigations() {
         <div className="pointer-events-none flex flex-col items-center justify-center gap-[7px]">
           <div
             className="
-						bg-main-blue h-[2px] w-[24px] origin-bottom-left transition group-[.openMenu]:w-[26px]
+						h-[2px] w-[24px] origin-bottom-left bg-main-blue transition group-[.openMenu]:w-[26px]
              group-[.openMenu]:rotate-45
 					"
           />
-          <div className="bg-main-blue h-[2px] w-[24px] transition group-[.openMenu]:invisible" />
+          <div className="h-[2px] w-[24px] bg-main-blue transition group-[.openMenu]:invisible" />
           <div
             className="
-						bg-main-blue h-[2px] w-[24px] origin-bottom-left transition group-[.openMenu]:ml-[2px]
+						h-[2px] w-[24px] origin-bottom-left bg-main-blue transition group-[.openMenu]:ml-[2px]
             group-[.openMenu]:w-[26px] group-[.openMenu]:-rotate-45
 					"
           />
@@ -67,8 +67,8 @@ export default function MobileNavigations() {
           `
           ${
             isMenuClosed ? "absolute" : "fixed"
-          } bg-main-blue/80 left-0 flex w-screen flex-col items-center
-          justify-center gap-2 px-6 py-4 backdrop-blur-sm transition-all duration-300 ${
+          } left-0 flex w-screen flex-col items-center justify-center
+          gap-2 bg-main-blue/80 px-6 py-4 backdrop-blur-sm transition-all duration-300 ${
             showMobileNav ? "translate-x-0" : "translate-x-[101vw]"
           }
         `,
@@ -81,11 +81,12 @@ export default function MobileNavigations() {
         {NAV_MENU.map(({ id, label, url }) => (
           <Link
             key={id}
+            id={`mobile-nav-${label}`}
             href={url}
             onClick={toggleMenu}
             className="
-              hover:text-nav-hover w-full whitespace-nowrap border-b border-white/10 px-2 py-4 text-center
-              font-semibold text-white transition last:border-b-0 xl:px-4
+              w-full whitespace-nowrap border-b border-white/10 px-2 py-4 text-center font-semibold
+              text-white transition last:border-b-0 hover:text-nav-hover xl:px-4
             "
           >
             {label}
