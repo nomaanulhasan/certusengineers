@@ -28,12 +28,12 @@ export default function Courses() {
   return (
     <div className="flex justify-center bg-[#F6F8FC] p-10 sm:p-20">
       <div className="flex w-full max-w-tv flex-col justify-center">
-        <h3 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
+        <h1 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
           Courses
-        </h3>
-        <h4 className="text-center text-2xl font-medium leading-loose text-primary-text md:text-3xl">
+        </h1>
+        <h2 className="text-center text-2xl font-medium leading-loose text-primary-text md:text-3xl">
           Popular Courses
-        </h4>
+        </h2>
 
         <div className="mb-8 mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {COURSES_DATA.map(({ id, title, icon }) => (

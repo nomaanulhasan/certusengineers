@@ -23,12 +23,12 @@ export default function WhatWeDo() {
   return (
     <div className="flex justify-center bg-[#F6F8FC] px-5 py-10 sm:p-20">
       <div className="w-full max-w-tv">
-        <h3 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
+        <h1 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
           What We Do
-        </h3>
-        <h4 className="text-center text-[1.35rem] font-medium leading-loose text-primary-text sm:text-2xl md:text-3xl">
+        </h1>
+        <h2 className="text-center text-[1.35rem] font-medium leading-loose text-primary-text sm:text-2xl md:text-3xl">
           Training | Services | Consulting
-        </h4>
+        </h2>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {WHAT_WE_DO_DATA.map(({ id, title, desc, icon }) => (

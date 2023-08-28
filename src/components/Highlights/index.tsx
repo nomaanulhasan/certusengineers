@@ -19,12 +19,13 @@ export default function Highlights() {
             />
           </div>
           <div className="flex flex-1 flex-col gap-5">
-            <h3 className="font-semibold uppercase leading-loose">
+            <h1 className="font-semibold uppercase leading-loose">
               Our Highlights
-            </h3>
-            <h4 className="text-2xl font-medium leading-loose md:text-3xl">
+            </h1>
+            <h2 className="text-2xl font-medium leading-loose md:text-3xl">
               Preparing for your success
-            </h4>
+            </h2>
+
             <div className="flex flex-col gap-5">
               <p>
                 Our team of experienced IT professionals has the knowledge and

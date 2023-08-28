@@ -27,12 +27,12 @@ export default function WhoWeAre() {
     <div className="flex justify-center bg-[url('/images/who-we-are-bg.jpg')] bg-no-repeat px-5 py-10 sm:p-20">
       <div className="flex w-full max-w-tv flex-col gap-8">
         <div>
-          <h3 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
+          <h1 className="mb-3 text-center font-semibold uppercase leading-loose text-section-head">
             Who We Are
-          </h3>
-          <h4 className="text-center text-xl font-medium leading-loose text-primary-text sm:text-2xl md:text-3xl">
+          </h1>
+          <h2 className="text-center text-xl font-medium leading-loose text-primary-text sm:text-2xl md:text-3xl">
             We deal with the aspects of professional IT Services
-          </h4>
+          </h2>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {WHO_WE_ARE_DATA.map(({ id, title, desc, icon }) => (
