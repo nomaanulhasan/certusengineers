@@ -5,7 +5,11 @@ import MobileNavigations from "./MobileNavigations";
 
 export default function FixedHeader() {
   return (
-    <header className="sticky top-0 z-50 flex w-full justify-center bg-white shadow-md transition-all duration-300">
+    <header
+      className="
+        sticky top-0 z-50 flex w-full justify-center bg-white shadow-md transition-all duration-300
+      "
+    >
       <div className="flex min-h-[64px] w-full max-w-tv items-center justify-between py-2 pl-4 pr-6">
         <Link
           id="header-logo"
@@ -32,7 +36,8 @@ export default function FixedHeader() {
             id="nav-contact"
             href="/contact-us"
             className="
-              whitespace-nowrap rounded-md bg-main-orange px-4 py-4 font-semibold text-white transition hover:bg-nav-hover xl:px-6
+              whitespace-nowrap rounded-md bg-main-orange px-4 py-3 font-semibold text-white
+              transition hover:bg-nav-hover xl:px-6 xl:py-4
             "
           >
             Contact Us
