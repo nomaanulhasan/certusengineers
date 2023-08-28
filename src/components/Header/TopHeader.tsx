@@ -18,18 +18,27 @@ export default function TopHeader() {
         <div className="flex gap-2 text-center transition sm:gap-8">
           <div className="hidden sm:flex sm:gap-1">
             Call Us:{" "}
-            <Link id="header-call" href="tel:8007409709">
+            <Link
+              id="header-call"
+              aria-label="Header call"
+              href="tel:8007409709"
+            >
               80074 09709
             </Link>
           </div>
           <div className="hidden sm:flex sm:gap-1">
             Email us:{" "}
-            <Link id="header-email" href="mailto:certusengineers@gmail.com">
+            <Link
+              id="header-email"
+              aria-label="Header email"
+              href="mailto:certusengineers@gmail.com"
+            >
               certusengineers@gmail.com
             </Link>
           </div>
           <Link
             id="header-call-icon"
+            aria-label="Header call icon"
             href="tel:8007409709"
             className="h-6 w-6 text-main-orange transition hover:text-nav-hover sm:hidden"
           >
@@ -37,6 +46,7 @@ export default function TopHeader() {
           </Link>
           <Link
             id="header-email-icon"
+            aria-label="Header email icon"
             href="mailto:certusengineers@gmail.com"
             className="h-6 w-6 text-main-orange transition hover:text-nav-hover sm:hidden"
           >

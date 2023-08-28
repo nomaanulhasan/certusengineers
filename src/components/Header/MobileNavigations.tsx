@@ -38,6 +38,8 @@ export default function MobileNavigations() {
     <div className="relative overflow-hidden">
       <button
         ref={menuBtnRef}
+        id="toggleMenu"
+        aria-label="Toggle Menu"
         onClick={toggleMenu}
         className={clsx(
           `group flex h-[32px] w-[32px] items-center justify-center`,
