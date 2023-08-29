@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
-import { PageWrapper, Container } from "@/components";
+import {
+  PageWrapper,
+  ItSupport4Business,
+  VisionMission,
+  GetInTouch,
+} from "@/components";
 
 export const metadata: Metadata = {
   title: "About Us - Certus Engineers",
@@ -8,7 +13,9 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <PageWrapper title="About Us">
-      <Container>About Us Page Content</Container>
+      <ItSupport4Business />
+      <VisionMission />
+      <GetInTouch />
     </PageWrapper>
   );
 }

@@ -7,7 +7,9 @@ import Highlights from "./Highlights";
 import WhoWeAre from "./WhoWeAre";
 import JobUpdates from "./JobUpdates";
 import Footer from "./Footer";
+import GetInTouch from "./GetInTouch";
 import { PageWrapper, Container } from "./Wrappers";
+import { ItSupport4Business, VisionMission } from "./AboutPage";
 
 export {
   Header,
@@ -19,6 +21,9 @@ export {
   WhoWeAre,
   JobUpdates,
   Footer,
+  GetInTouch,
   PageWrapper,
   Container,
+  ItSupport4Business,
+  VisionMission,
 };
