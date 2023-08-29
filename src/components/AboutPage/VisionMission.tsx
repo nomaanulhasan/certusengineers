@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function VisionMission() {
   return (
-    <div className="py-12 lg:py-8">
+    <div className="py-8">
       <div className="flex flex-col bg-[url('/images/world-map.jpg')] bg-cover bg-no-repeat text-white lg:flex-row lg:gap-8">
         <div className="flex flex-[2] flex-col py-12 sm:flex-row lg:p-0">
           <div className="flex flex-1 flex-col items-start justify-center gap-4 p-12 lg:px-4 lg:pl-16">

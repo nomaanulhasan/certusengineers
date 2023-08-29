@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function ItSupport4Business() {
   return (
-    <div className="mx-auto w-full max-w-7xl px-6 py-12">
+    <div className="mx-auto w-full max-w-7xl px-6 py-20">
       <div className="m-auto flex flex-col gap-10 text-center lg:flex-row lg:text-left">
         <div className="flex flex-1 items-center justify-center lg:justify-start">
           <Image
