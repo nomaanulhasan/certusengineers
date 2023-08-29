@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { PageWrapper, Container } from "@/components";
 
 export const metadata: Metadata = {
-  title: "Loading - Certus Engineers",
+  title: "Courses - Certus Engineers",
 };
 
-export default function Loading() {
+export default function Courses() {
   return (
-    <PageWrapper title="Loading...">
-      <Container>Loading...</Container>
+    <PageWrapper title="Courses">
+      <Container>Courses Page Content</Container>
     </PageWrapper>
   );
 }
