@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function JobUpdates() {
   return (
     <PageWrapper title="Job Updates">
-      <Container>Job Updates Page Content</Container>
+      <Container>Job Updates Page Content - WIP</Container>
     </PageWrapper>
   );
 }

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Consultancy() {
   return (
     <PageWrapper title="Consultancy">
-      <Container>Consultancy Page Content</Container>
+      <Container>Consultancy Page Content - WIP</Container>
     </PageWrapper>
   );
 }

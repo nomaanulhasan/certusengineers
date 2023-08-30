@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Services() {
   return (
     <PageWrapper title="Services">
-      <Container>Services Page Content</Container>
+      <Container>Services Page Content - WIP</Container>
     </PageWrapper>
   );
 }

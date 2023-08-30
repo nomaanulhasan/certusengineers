@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Conatct() {
   return (
     <PageWrapper title="Contact Us">
-      <Container>Conatct Us Page Content</Container>
+      <Container>Conatct Us Page Content - WIP</Container>
     </PageWrapper>
   );
 }
