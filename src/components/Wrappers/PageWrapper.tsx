@@ -10,8 +10,8 @@ export default function PageWrapper({
       <div className="w-full bg-[url('/images/universe_bg.jpg')] bg-cover bg-no-repeat">
         <div
           className="
-            m-auto flex h-48 w-full max-w-tv items-center justify-center p-6 text-5xl
-            font-semibold text-white transition-all duration-300 lg:justify-start
+            m-auto flex h-48 w-full max-w-tv items-center justify-center p-6 text-4xl
+            font-semibold text-white transition-all duration-300 sm:text-5xl lg:justify-start
           "
         >
           {title}
