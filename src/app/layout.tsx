@@ -3,8 +3,10 @@ import "./flaticon.css";
 import type { Metadata } from "next";
 import Head from "next/head";
 import { Rubik } from "next/font/google";
+import { ToastContainer } from "react-toastify";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import "react-toastify/dist/ReactToastify.css";
 import { Footer, Header } from "@/components";
 
 config.autoAddCss = false;
@@ -61,6 +63,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ToastContainer />
       </body>
     </html>
   );

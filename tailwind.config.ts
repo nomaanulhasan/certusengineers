@@ -24,6 +24,7 @@ const config: Config = {
       },
       boxShadow: {
         "job-card": "0px 0px 30px 0px hsl(0deg 0% 0% / 7%)",
+        "contact-card": "0px 0px 33px 0px rgba(0, 0, 0, 0.07)",
       },
     },
   },
